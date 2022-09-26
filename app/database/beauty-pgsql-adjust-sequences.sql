@@ -1,0 +1,14 @@
+SELECT setval('agenda_id_seq', coalesce(max(id),0) + 1, false) FROM agenda;
+SELECT setval('clientes_id_seq', coalesce(max(id),0) + 1, false) FROM clientes;
+SELECT setval('contas_id_seq', coalesce(max(id),0) + 1, false) FROM contas;
+SELECT setval('fornecedores_id_seq', coalesce(max(id),0) + 1, false) FROM fornecedores;
+SELECT setval('grupo_contas_id_seq', coalesce(max(id),0) + 1, false) FROM grupo_contas;
+SELECT setval('grupo_produtos_id_seq', coalesce(max(id),0) + 1, false) FROM grupo_produtos;
+SELECT setval('grupo_servicos_id_seq', coalesce(max(id),0) + 1, false) FROM grupo_servicos;
+SELECT setval('horario_profissionais_id_seq', coalesce(max(id),0) + 1, false) FROM horario_profissionais;
+SELECT setval('pagamentos_id_seq', coalesce(max(id),0) + 1, false) FROM pagamentos;
+SELECT setval('produtos_id_seq', coalesce(max(id),0) + 1, false) FROM produtos;
+SELECT setval('profissionais_id_seq', coalesce(max(id),0) + 1, false) FROM profissionais;
+SELECT setval('servicos_id_seq', coalesce(max(id),0) + 1, false) FROM servicos;
+SELECT setval('tipo_pagamento_id_seq', coalesce(max(id),0) + 1, false) FROM tipo_pagamento;
+SELECT setval('tipo_profissionais_id_seq', coalesce(max(id),0) + 1, false) FROM tipo_profissionais;
